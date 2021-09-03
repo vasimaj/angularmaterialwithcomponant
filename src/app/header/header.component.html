@@ -1,0 +1,48 @@
+
+<div id="hdrdiv">
+<h1>Welcome TO Online World</h1>
+
+<button mat-button [matMenuTriggerFor]="animals">Services</button>
+<mat-menu #animals="matMenu">
+  <button mat-menu-item [matMenuTriggerFor]="vertebrates">Products</button>
+  <button mat-menu-item [matMenuTriggerFor]="invertebrates">Services</button>
+</mat-menu>
+
+<mat-menu #vertebrates="matMenu">
+  <button mat-menu-item [matMenuTriggerFor]="fish">Website Development</button>
+  <button mat-menu-item [matMenuTriggerFor]="amphibians">Digital Marketting</button>
+  <button mat-menu-item [matMenuTriggerFor]="reptiles">Software Development</button>
+  
+</mat-menu>
+
+<mat-menu #invertebrates="matMenu">
+  <button mat-menu-item>Bulk SMS Services</button>
+  <button mat-menu-item>AMC For Software</button>
+  <button mat-menu-item>Whatsapp marketting</button>
+  <button mat-menu-item>Network ISP Provider</button>
+  <button mat-menu-item>Internship provider</button>
+  
+</mat-menu>
+
+<mat-menu #fish="matMenu">
+  <button mat-menu-item>Static Website Development</button>
+  <button mat-menu-item>Dynamic Web Development</button>
+  <button mat-menu-item>E-commerce Website</button>
+  
+</mat-menu>
+
+<mat-menu #amphibians="matMenu">
+  <button mat-menu-item>SEO</button>
+  <button mat-menu-item>Affilate Marketting</button>
+  <button mat-menu-item>Social media marketting</button>
+  <button mat-menu-item>Blogging</button>
+</mat-menu>
+
+<mat-menu #reptiles="matMenu">
+  <button mat-menu-item>Billing Softwares</button>
+  <button mat-menu-item>Web Application For Biling</button>
+  <button mat-menu-item>E-commerce Stoar</button>
+  
+</mat-menu>
+
+</div>
